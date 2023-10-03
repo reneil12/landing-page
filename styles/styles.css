@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar, .hero-section, .signup-section, .footer{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+    padding: .625rem 9.375rem;
+}
+
+.navbar > .logo{
+    margin-right: auto;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.navbar > ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: .9375rem;
+}
