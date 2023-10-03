@@ -7,19 +7,32 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    font-size: 20px;
 }
 
+/* Text color */
 .navbar, .hero-section, .signup-section, .footer{
     color: white;
 }
 
+.info-section, .quote-section{
+    color: black;
+}
+
+/* Padding */
+.navbar, .hero-section, .signup-section{
+    padding: 1.625rem 12.5rem;
+}
+
+/* Navigation bar */
 .navbar{
     display: flex;
     background-color: #1F2937;
     justify-content: center;
     align-items: center;
     min-height: 4rem;
-    padding: .625rem 9.375rem;
+    
 }
 
 .navbar > .logo{
@@ -32,4 +45,101 @@ body{
     list-style: none;
     flex-direction: row;
     gap: .9375rem;
+}
+
+/* Hero Section */
+.hero-section{
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    gap: 50px;
+    padding: 8rem 16rem;
+    min-height: 400px;
+
+    .hero-title{
+        font-size: 48px;
+        font-weight: 900;
+    }
+}
+
+.hero-section-left{
+   flex-basis: 100%;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid white;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 15px;
+}
+.hero-section-right{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    justify-content: center;
+}
+.hero-section-right > img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+/* Info Section */
+.info-section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: .625rem 15.625rem;
+
+    .info-title{
+        text-align: center;
+        padding: 35px;
+        font-size: 35px;
+        font-weight: 900;
+    }
+}
+
+.info-card-container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    gap: 30px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    border: 1px solid black;
+    padding: 15px;
+    gap: 10px;
+}
+
+.info-card > img{
+    width: 180px;
+    height: 180px;
+}
+/* Quote Section */
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: lightgray;
+    
+}
+
+/* Signup Section*/
+.signup-section{
+    display: flex;
+}
+
+/* Footer */
+.footer{
+    background-color: #1F2937;
+    text-align: center;
+    align-items: center;
 }
