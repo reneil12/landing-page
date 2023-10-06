@@ -1,145 +1,230 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-size: 20px;
+  font-family: Roboto;
 }
-
-/* Text color */
-.navbar, .hero-section, .signup-section, .footer{
-    color: white;
-}
-
-.info-section, .quote-section{
-    color: black;
-}
-
-/* Padding */
-.navbar, .hero-section, .signup-section{
-    padding: 1.625rem 12.5rem;
-}
-
-/* Navigation bar */
+  /* Navigation Bar */
+  
 .navbar{
     display: flex;
-    background-color: #1F2937;
-    justify-content: center;
     align-items: center;
-    min-height: 4rem;
-    
+    background-color: #1F2937;
+    color: white;
+    height: 60px;
+    padding: 10px 230px;
 }
 
-.navbar > .logo{
-    margin-right: auto;
-    font-size: 1.25rem;
-    font-weight: 900;
+a{
+  text-decoration: none;
+  color: white;
 }
-.navbar > ul{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    gap: .9375rem;
+
+.logo{
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 900;
 }
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* -------------------------- */ 
 
 /* Hero Section */
+
 .hero-section{
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: center;
-    gap: 50px;
-    padding: 8rem 16rem;
-    min-height: 400px;
-
-    .hero-title{
-        font-size: 48px;
-        font-weight: 900;
-    }
+  display: flex;
+  height: 475px;
+  background-color: #1F2937;
+  color: white;
+  
 }
 
-.hero-section-left{
-   flex-basis: 100%;
-   display: flex;
-   flex-direction: column;
-   border: 1px solid white;
-   align-items: flex-start;
-   justify-content: center;
-   gap: 15px;
+.hero-child-section{
+  display: flex;
+  margin: 100px 230px;
+  gap: 60px;
 }
-.hero-section-right{
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    justify-content: center;
+
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  pad: 5px;
 }
-.hero-section-right > img{
-    width: 6.25rem;
-    height: 6.25rem;
+
+.hero-main-text{
+  font-size: 48px;
+  font-weight: 900;
+  
 }
+
+.hero-sub-text{
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.signup-button{
+  color: white;
+  background-color: #3882F6;
+  height: 38px;
+  width: 130px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px auto ;
+}
+
+.signup-button:hover{
+  cursor: pointer;
+}
+
+.signup-button:active{
+  opacity: 80%;
+}
+
+.hero-right > img{
+  height: 100%;
+  width: 530px;
+}
+
+/* -------------------------- */ 
 
 /* Info Section */
-.info-section{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: .625rem 15.625rem;
 
-    .info-title{
-        text-align: center;
-        padding: 35px;
-        font-size: 35px;
-        font-weight: 900;
-    }
+.info-section{
+  height: 475px; 
+}
+
+.info-img{
+  max-width: 179px;
+  height: 179px;
+  border-radius: 20px;
+}
+
+.info-child-container{
+  display: flex;
+  flex-direction: column;
+  margin: 55px 230px;
+  gap: 50px;
+  align-items: center;
+}
+
+.info-title{
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
 }
 
 .info-card-container{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 50px;
 }
 
 .info-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    border: 1px solid black;
-    padding: 15px;
-    gap: 10px;
+  width: 180px;
 }
 
-.info-card > img{
-    width: 180px;
-    height: 180px;
+.info-card > p{
+  margin-top: 10px;
 }
+
+/* -------------------------- */ 
+
 /* Quote Section */
+
 .quote-section{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    background-color: lightgray;
-    
+  height: 475px; 
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Signup Section*/
+.quote-child-container{
+  display: flex;
+  flex-direction: column;
+  margin: 70px 335px;
+  gap: 10px;
+}
+
+.quote-text{
+  font-size: 36px;
+  font-style: italic;
+}
+
+.quote-author{
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* -------------------------- */ 
+
+/* Signup Section */
 .signup-section{
-    display: flex;
+  height: 390px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Footer */
-.footer{
-    background-color: #1F2937;
-    text-align: center;
-    align-items: center;
+.signup-child-container{
+  margin: 0 230px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 50px 100px;
+  background-color: #3882F6;
 }
+
+.signup-left{
+  flex: 1;
+  gap: 30px;
+}
+
+.signup-maintext{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.signup-subtext{
+  font-size: 18px;
+}
+.signup-right > .signup-button{
+  border: 2px solid white;
+}
+
+/* -------------------------- */ 
+
+/* Footer Section */
+
+.footer-section{
+  height: 85px;
+  background-color: #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text{
+  color: white;
+  font-size: 20px;
+}
+
+/* -------------------------- */ 
+

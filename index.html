@@ -1,65 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <!--Navigation bar-->
-    <header class="navbar">
-        <p class="logo">Header Logo</p>
-        <ul class="header-links">
-            <li>Header Link 1</li>
-            <li>Header Link 2</li>
-            <li>Header Link 3</li>
-        </ul>
-    </header>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Some Web Page</title>
+    <link rel='stylesheet' href='styles/styles.css'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-    <!--Hero Section-->
+    <!-- Navigation Bar-->
+    <div class="navbar">
+      <a href="index.html" class="logo">Header Logo</a>
+      <ul>
+        <li>
+          <a href="#" class="header-link">header link one</a>
+        </li>
+        <li>
+          <a href="#" class="header-link">header link two</a>
+        </li>
+        <li>
+          <a href="#" class="header-link">header link three</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
     <div class="hero-section">
-        <div class="hero-section-left">
-            <p class="hero-title">This website is awesome</p>
-            <p class="hero-description">
-                This website has some subtext that goes here under the main title.
-                It's a smaller font and the color is lower contrast.
-            </p>
-            <button class="signup-button">Sign up</button>
+      <div class="hero-child-section">
+        <div class="hero-left">
+          <p class="hero-main-text">This website is awesome</p>
+          <p class="hero-sub-text">
+            This website has some subtext that goes here under the
+            main title. It's a smaller font and the color is lower
+            contrast
+          </p>
+          <button class="signup-button">Sign up</button>
         </div>
-        <div class="hero-section-right">
-            <img src="images/img1.jpg" alt="img1">
+        <div class="hero-right">
+          <img src="images/img1.jpg" alt="image1">
+          </p>
         </div>
+      </div>
     </div>
 
+    <!-- Information Section -->
     <div class="info-section">
-        <p class="info-title">Some Random Information</p>
+      <div class="info-child-container">
+        <p class="info-title">Some random information.</p>
         <div class="info-card-container">
-            <div class="info-card">
-                <img src="images/barberry.png" alt="barberry">
-                <p>This is some subtext under an illustration or image</p>
-            </div>
-            <div class="info-card">
-                <img src="images/barberry.png" alt="barberry">
-                <p>This is some subtext under an illustration or image</p>
-            </div>
-            <div class="info-card">
-                <img src="images/barberry.png" alt="barberry">
-                <p>This is some subtext under an illustration or image</p>
-            </div>
-            <div class="info-card">
-                <img src="images/barberry.png" alt="barberry">
-                <p>This is some subtext under an illustration or image</p>
-            </div>
+          <div class="info-card">
+            <img src="images/one.svg" class="info-img" alt="img1">
+            <p>This is some subtext under an illustration of image</p>
+          </div>
+          <div class="info-card">
+            <img src="images/two.svg" class="info-img" alt="img1">
+            <p>This is some subtext under an illustration of image</p>
+          </div>
+          <div class="info-card">
+            <img src="images/three.svg" class="info-img" alt="img1">
+            <p>This is some subtext under an illustration of image</p>
+          </div>
+          <div class="info-card">
+            <img src="images/four.svg" class="info-img" alt="img1">
+            <p>This is some subtext under an illustration of image</p>
+          </div>
         </div>
+      </div>
     </div>
 
+    <!-- Quote Section -->
     <div class="quote-section">
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up
-        space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p>-Thor, God of Thunder</p>
+      <div class="quote-child-container">
+        <p class="quote-text">This is an inspiring quote, or a testimonial from a 
+        customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know
+        is that it looks nice.
+        </p>
+        <p class="quote-author">-Thor, God of Thunder</p>
+      </div>
     </div>
-    <div class="signup-section"></div>
-    <footer class="footer"><p>Copyright @ The Odin Projeect</p></footer>
-</body>
+
+    <!-- Signup Section -->
+    <div class="signup-section">
+      <div class="signup-child-container">
+        <div class="signup-left">
+          <p class="signup-maintext">Call to action! It's time!</p>
+          <p class="signup-subtext">Sign up for our product by clicking that button right over there!</p>
+        </div>
+        <div class="signup-right">
+          <button class="signup-button">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+      <p class="footer-text">Copyright  ©  The Odin Project 2023</p>
+    </div>
+  </body>
 </html>
